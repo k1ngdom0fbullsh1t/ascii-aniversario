@@ -6,13 +6,30 @@
     <title>Regalo de Aniversario</title>
     <style>
         body {
-            background-color: #ffe6e6; 
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
         }
+
         pre {
             font-family: monospace;
             white-space: pre-wrap; 
             font-size: 18px;
             color: #ff66b2; 
+        }
+
+       
+        @media only screen and (max-width: 430px) and (max-height: 932px) {
+            pre {
+                font-size: 14px;
+                padding: 10px;
+                line-height: 1.5;
+            }
+
+            body {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -63,18 +80,19 @@
             }, index * 2500);
         });
 
+       
         setTimeout(() => {
             secondHeartFrames.forEach((frame, index) => {
                 setTimeout(() => {
                     fullHeart += frame;
-                    document.getElementById('heart').textContent = fullHeart; 
+                    document.getElementById('heart').textContent = fullHeart;
                 }, index * 1000);
             });
-        }, heartFrames.length * 2500);
+        }, heartFrames.length * 2500); 
 
         setTimeout(() => {
             alert(`¡Hoy cumplimos ${daysTogether} días juntos! 🎉\n\nTe amo y espero seguir compartiendo más días contigo. 💖`);
-        }, (heartFrames.length * 2500) + (secondHeartFrames.length * 1000));
+        }, (heartFrames.length * 2500) + (secondHeartFrames.length * 1000)); 
     </script>
 </body>
 </html>
