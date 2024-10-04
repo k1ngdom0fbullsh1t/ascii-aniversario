@@ -10,11 +10,6 @@
             margin: 0;
             padding: 20px;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
         }
 
         pre {
@@ -22,16 +17,6 @@
             white-space: pre-wrap; 
             font-size: 18px;
             color: #ff66b2;
-            margin: 0; 
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
         }
 
         .full-content {
@@ -65,11 +50,9 @@
 </head>
 <body>
 
-    <div class="container">
-        <pre id="heart" class="full-content"></pre>
+    <pre id="heart" class="full-content"></pre>
 
-        <pre id="smallHeart" class="ascii-art-only"></pre>
-    </div>
+    <pre id="smallHeart" class="ascii-art-only"></pre>
 
     <script>
         const startDate = new Date("2018-10-04");
